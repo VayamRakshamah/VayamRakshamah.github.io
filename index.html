@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Backend developer portfolio focused on API design, distributed systems, observability, performance, and reliability."
+    />
+    <title>Backend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Backend Developer home">
+        <span class="brand-mark" aria-hidden="true">λ</span>
+        <span>Backend.dev</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#systems">Systems</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Get in Touch</a>
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Backend <span>Developer</span></h1>
+          <p>
+            I design APIs, distributed systems, observability pipelines, and high-throughput services that stay calm under real production load.
+          </p>
+          <ol class="hero-list" aria-label="Backend strengths">
+            <li><span>01</span>API design and schema evolution</li>
+            <li><span>02</span>Distributed systems and event architectures</li>
+            <li><span>03</span>Observability and production debugging</li>
+            <li><span>04</span>Performance, reliability, and scale</li>
+          </ol>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#work">View Projects</a>
+            <a class="button secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="architecture-board" aria-label="Backend architecture visual">
+          <div class="board-topline">
+            <span>request.flow</span>
+            <span>p99 84ms</span>
+          </div>
+          <div class="trace trace-a"></div>
+          <div class="trace trace-b"></div>
+          <div class="node api-node">
+            <span>API</span>
+            <strong>Gateway</strong>
+          </div>
+          <div class="node queue-node">
+            <span>Queue</span>
+            <strong>42k/min</strong>
+          </div>
+          <div class="node worker-node">
+            <span>Workers</span>
+            <strong>autoscale</strong>
+          </div>
+          <div class="node db-node">
+            <span>Shards</span>
+            <strong>read replicas</strong>
+          </div>
+          <div class="log-window">
+            <div class="log-line good"><span></span>cache hit /accounts/:id</div>
+            <div class="log-line"><span></span>emit invoice.created</div>
+            <div class="log-line warn"><span></span>retry payment-webhook</div>
+            <div class="log-line good"><span></span>commit offset 918204</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Backend engineering focus areas">
+        <div>
+          <span>01</span>
+          <strong>API contracts</strong>
+          <p>Versioned, testable, and friendly to product teams.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Reliability</strong>
+          <p>Timeouts, queues, retries, idempotency, and alerts.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Performance</strong>
+          <p>Measured bottlenecks, lean queries, and predictable latency.</p>
+        </div>
+      </section>
+
+      <section class="section-shell systems-section" id="systems" aria-labelledby="systems-title">
+        <div class="section-heading">
+          <h2 id="systems-title">Systems Expertise</h2>
+          <p>Practical backend work across the path from product idea to durable service.</p>
+        </div>
+        <div class="systems-grid">
+          <article>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16M7 7v10m10-10v10M4 17h16" /></svg>
+            </div>
+            <h3>Service architecture</h3>
+            <p>Boundaries, event flows, background jobs, ownership models, and migration paths that reduce operational drag.</p>
+          </article>
+          <article>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 18V6m0 12h14M9 15l3-4 3 2 4-7" /></svg>
+            </div>
+            <h3>Observability</h3>
+            <p>Metrics, logs, traces, dashboards, and alert rules that expose causes instead of producing noise.</p>
+          </article>
+          <article>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 8h12v8H6zM9 4v4m6-4v4M9 16v4m6-4v4" /></svg>
+            </div>
+            <h3>Data performance</h3>
+            <p>Index strategy, query plans, cache design, and consistency choices tuned to product behavior.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-shell work-shell">
+          <div class="section-heading">
+            <h2 id="work-title">Selected Backend Projects</h2>
+            <p>Replace these with your own work as we personalize the site.</p>
+          </div>
+          <div class="project-list">
+            <article class="project-row">
+              <div class="project-index">01</div>
+              <div>
+                <h3>Payments Webhook Platform</h3>
+                <p>Idempotent processing, replay tooling, signature verification, and dead-letter recovery for critical billing events.</p>
+              </div>
+              <ul>
+                <li>Node.js</li>
+                <li>Postgres</li>
+                <li>Kafka</li>
+              </ul>
+            </article>
+            <article class="project-row">
+              <div class="project-index">02</div>
+              <div>
+                <h3>Multi-tenant API Gateway</h3>
+                <p>Rate limits, tenant-aware routing, audit logs, and contract tests for partner-facing integrations.</p>
+              </div>
+              <ul>
+                <li>Go</li>
+                <li>Redis</li>
+                <li>OpenAPI</li>
+              </ul>
+            </article>
+            <article class="project-row">
+              <div class="project-index">03</div>
+              <div>
+                <h3>Analytics Ingestion Pipeline</h3>
+                <p>Buffered event ingestion with backpressure, schema validation, partitioned storage, and real-time health views.</p>
+              </div>
+              <ul>
+                <li>Python</li>
+                <li>S3</li>
+                <li>DuckDB</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell proof-section" aria-labelledby="proof-title">
+        <div class="proof-copy">
+          <h2 id="proof-title">Built for the uncomfortable parts of production.</h2>
+          <p>
+            The strongest backend work is usually invisible: fewer incidents, clearer APIs, faster deployments, and systems other engineers can reason about when pressure is high.
+          </p>
+        </div>
+        <div class="proof-board">
+          <div class="metric">
+            <span>p95 latency</span>
+            <strong>118ms</strong>
+          </div>
+          <div class="metric">
+            <span>error budget</span>
+            <strong>99.94%</strong>
+          </div>
+          <div class="metric">
+            <span>deploy cadence</span>
+            <strong>daily</strong>
+          </div>
+          <div class="terminal-panel" aria-label="Deployment terminal sample">
+            <p><span>$</span> run migration:expand</p>
+            <p><span>✓</span> backward-compatible column deployed</p>
+            <p><span>✓</span> read path verified across replicas</p>
+            <p><span>→</span> contract tests passing</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes-section" id="notes" aria-labelledby="notes-title">
+        <div class="section-shell notes-shell">
+          <div class="section-heading">
+            <h2 id="notes-title">Notes</h2>
+            <p>Short technical writing can turn this portfolio into a stronger proof of taste.</p>
+          </div>
+          <div class="notes-grid">
+            <a href="#contact">
+              <span>Architecture</span>
+              <strong>Designing APIs that survive changing clients</strong>
+            </a>
+            <a href="#contact">
+              <span>Reliability</span>
+              <strong>Retries are a product decision, not only a code path</strong>
+            </a>
+            <a href="#contact">
+              <span>Performance</span>
+              <strong>How I profile slow queries before touching indexes</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div>
+          <h2>Let’s build the dependable layer.</h2>
+          <p>Available for backend engineering roles, platform work, and API-heavy product teams.</p>
+        </div>
+        <div class="footer-actions">
+          <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
