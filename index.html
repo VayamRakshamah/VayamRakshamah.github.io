@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260620" />
+    <link rel="stylesheet" href="./styles.css?v=20260620-live-projects" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -180,6 +180,117 @@
                 <li>Microservices</li>
               </ul>
             </article>
+          </div>
+
+          <div class="live-projects" aria-labelledby="live-projects-title">
+            <div class="live-projects-heading">
+              <div>
+                <span>Live Projects</span>
+                <h3 id="live-projects-title">Deployed projects you can open, inspect, and test.</h3>
+              </div>
+              <p>Two recent builds presented as live app windows, with source available for review.</p>
+            </div>
+
+            <div class="live-project-grid">
+              <article class="live-project-card">
+                <a
+                  class="live-window"
+                  href="https://vinaygupta.in/PeopleGraph/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open PeopleGraph live project"
+                >
+                  <div class="window-chrome">
+                    <span class="window-dot"></span>
+                    <span class="window-dot"></span>
+                    <span class="window-dot"></span>
+                    <span class="window-url">vinaygupta.in/PeopleGraph</span>
+                  </div>
+                  <div class="people-preview" aria-hidden="true">
+                    <div class="preview-copy">
+                      <span>Private - Local only</span>
+                      <strong>PeopleGraph</strong>
+                      <p>Trusted contacts mapped as a private relationship graph.</p>
+                    </div>
+                    <div class="graph-cluster">
+                      <span class="graph-node graph-core"></span>
+                      <span class="graph-node graph-a"></span>
+                      <span class="graph-node graph-b"></span>
+                      <span class="graph-node graph-c"></span>
+                      <span class="graph-node graph-d"></span>
+                      <i class="edge edge-a"></i>
+                      <i class="edge edge-b"></i>
+                      <i class="edge edge-c"></i>
+                      <i class="edge edge-d"></i>
+                    </div>
+                  </div>
+                </a>
+                <div class="live-project-meta">
+                  <div>
+                    <h4>PeopleGraph</h4>
+                    <p>Privacy-first relationship intelligence prototype for mapping trusted contact networks.</p>
+                  </div>
+                  <ul>
+                    <li>React</li>
+                    <li>Graph UI</li>
+                    <li>Privacy-first MVP</li>
+                  </ul>
+                  <div class="live-project-actions">
+                    <a href="https://vinaygupta.in/PeopleGraph/" target="_blank" rel="noreferrer">Open Live</a>
+                    <a href="https://github.com/VayamRakshamah/PeopleGraph" target="_blank" rel="noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="live-project-card">
+                <a
+                  class="live-window"
+                  href="https://vinaygupta.in/redis-cache-lab-service/?api=https://redis-cache-lab-service.onrender.com/api"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open Redis Cache Lab live project"
+                >
+                  <div class="window-chrome">
+                    <span class="window-dot"></span>
+                    <span class="window-dot"></span>
+                    <span class="window-dot"></span>
+                    <span class="window-url">redis-cache-lab-service</span>
+                  </div>
+                  <div class="redis-preview" aria-hidden="true">
+                    <div class="cache-metrics">
+                      <div><span>Hit rate</span><strong>87%</strong></div>
+                      <div><span>TTL</span><strong>47s</strong></div>
+                      <div><span>Latency</span><strong>18ms</strong></div>
+                    </div>
+                    <div class="cache-flow">
+                      <span>API</span>
+                      <i></i>
+                      <span>Redis</span>
+                      <i></i>
+                      <span>DB fallback</span>
+                      <i></i>
+                      <span>Response</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="live-project-meta">
+                  <div>
+                    <h4>Redis Cache Lab</h4>
+                    <p>Spring Boot + Redis cache-aside lab showing hit/miss, bypass, TTL, headers, and latency behavior.</p>
+                  </div>
+                  <ul>
+                    <li>Spring Boot</li>
+                    <li>Redis</li>
+                    <li>Cache-aside</li>
+                    <li>Render API</li>
+                  </ul>
+                  <div class="live-project-actions">
+                    <a href="https://vinaygupta.in/redis-cache-lab-service/?api=https://redis-cache-lab-service.onrender.com/api" target="_blank" rel="noreferrer">Open Live</a>
+                    <a href="https://github.com/VayamRakshamah/redis-cache-lab-service" target="_blank" rel="noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
