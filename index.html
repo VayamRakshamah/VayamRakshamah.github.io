@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260620-live-projects" />
+    <link rel="stylesheet" href="./styles.css?v=20260620-ux-cleanup" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -23,10 +23,10 @@
         <span>Vinay Gupta</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work">Work</a>
         <a href="#systems">Systems</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
       </nav>
       <a class="header-cta" href="#contact">Contact</a>
       <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-button>
@@ -49,7 +49,7 @@
             <li><span>04</span>Performance tuning for 100k+ concurrent users</li>
           </ol>
           <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary" href="#work">View Projects</a>
+            <a class="button primary" href="#projects">View Projects</a>
             <a class="button secondary" href="mailto:vinaygupta.work@gmail.com?subject=Resume%20Request">Request Resume</a>
           </div>
         </div>
@@ -182,7 +182,7 @@
             </article>
           </div>
 
-          <div class="live-projects" aria-labelledby="live-projects-title">
+          <div class="live-projects" id="projects" aria-labelledby="live-projects-title">
             <div class="live-projects-heading">
               <div>
                 <span>Live Projects</span>
@@ -324,22 +324,24 @@
         </div>
       </section>
 
-      <section class="notes-section" id="notes" aria-labelledby="notes-title">
+      <section class="notes-section" id="certifications" aria-labelledby="certifications-title">
         <div class="section-shell notes-shell">
           <div class="section-heading">
-            <h2 id="notes-title">Notes</h2>
-            <p>Short technical writing can turn this portfolio into a stronger proof of taste.</p>
+            <h2 id="certifications-title">Certifications</h2>
           </div>
           <div class="notes-grid">
             <a href="#contact">
+              <img src="./assets/google-cloud-generative-ai-leader.png" alt="Google Cloud Generative AI Leader certification badge" />
               <span>Certification</span>
               <strong>Google Cloud Generative AI Engineer</strong>
             </a>
             <a href="#contact">
+              <img src="./assets/microsoft-azure-fundamentals.png" alt="Microsoft Certified Azure Fundamentals badge" />
               <span>Certification</span>
               <strong>Microsoft Certified: Azure Fundamentals</strong>
             </a>
             <a href="#contact">
+              <img src="./assets/daml-associate.png" alt="DAML Associate certification badge" />
               <span>Certification</span>
               <strong>DAML Associate from Digital Asset</strong>
             </a>
